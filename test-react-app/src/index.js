@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { IBMComp } from './ibmcomp'
-//import { MyComp } from './mycomp'
+import { Topics } from './topics/Topics';
 
-ReactDOM.render(<IBMComp />, document.getElementById('root'));
+ReactDOM.render(<Topics/>, document.getElementById('root'));
 
