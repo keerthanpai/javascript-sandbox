@@ -5,8 +5,6 @@ import { IBMComp } from './ibmcomp'
 import { Topics } from './topics/Topics';
 import { MyComp } from './mycomp';
 import './index.css';
-import { Login } from './Login';
-import App from './App';
 
 //npm install react-router-dom --save
 function AppRouter(){
@@ -17,16 +15,11 @@ function AppRouter(){
                 <li> <Link to="/ibmcomp/pune">IBM Pune</Link> </li>
                 <li> <Link to="/topicscomp">Topics</Link> </li>
                 <li> <Link to="/mycomp">My Component</Link> </li>
-                <li> <Link to="/signin">Sign in</Link> </li>
             </ul>
             <div className="container">
                 <Route path='/ibmcomp/:city' component={IBMComp}/>
                 <Route path='/topicscomp' component={Topics}/>
                 <Route path='/mycomp' component={MyComp}/>
-                <Route path='/signin' component={Login}/>
-            </div>
-            <div>
-                <Route path='/' component={App}/>
             </div>
         </div>
     )
