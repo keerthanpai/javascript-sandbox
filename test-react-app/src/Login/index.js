@@ -9,11 +9,11 @@ export class Login extends React.Component{
     }
 
     doSignIn = () => {
-        let uname = this.refs.userref.value;
+        let user = this.refs.userref.value;
         let pass = this.refs.passref.value;
 
-        if(uname === 'john' && pass === '123'){
-            this.props.history.push('/ibmcomp/bangalore');      //Redirection
+        if(user === 'john' && pass === '123'){
+            this.props.history.push('/userhome/' + user);      //Redirection
             //this.setState({msg:'Welcome'});       
         }
         else
