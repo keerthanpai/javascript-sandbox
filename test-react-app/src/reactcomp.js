@@ -1,6 +1,6 @@
 import React from 'react';
 
-export class IBMComp extends React.Component {
+export class ReactComp extends React.Component {
     render(){
         return (
             <div>

@@ -31,7 +31,7 @@ export class Login extends React.Component{
         return (
             <div>
 
-                <h3>Sign In</h3>
+                <h3>Sign In *only validates john/123*</h3>
                 <p> Login: <input type='text' id='username' ref="userref"></input></p>
                 <p> Password: <input type="password" id='password' ref="passref"></input></p>
                 <p>
