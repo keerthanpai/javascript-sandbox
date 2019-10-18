@@ -9,17 +9,17 @@ function mapStateToProps(state){
 function mapDispatchToProps(dispatch){
     return {
         inc : () => { 
-            let action = {type:'INC',payload:1}      
+            let action = {type:'INC',payload:2}      
             dispatch(action);
         },
         dec : () => { 
-            let action = {type:'DEC',payload:1}      
+            let action = {type:'DEC',payload:2}      
             dispatch(action);
         },
     }
 }
 
-export function ReduxCounter(props){
+export function ReduxDoubleCounter(props){
 
     let increment = () => {
         props.inc();
@@ -31,10 +31,10 @@ export function ReduxCounter(props){
 
     return(
         <div className="container">
-            <button onClick={increment}>Single Increment</button>
-            <button onClick={decrement}>Single Decrement</button>
+            <button onClick={increment}>Double Increment</button>
+            <button onClick={decrement}>Double Decrement</button>
         </div>
     )
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(ReduxCounter);
+export default connect(mapStateToProps, mapDispatchToProps)(ReduxDoubleCounter);
