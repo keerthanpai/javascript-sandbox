@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     a. nodemon package to auto reload nodejs changes.
         npm install -g nodemon     ---------> -g : To globally install nodemon
         `nodemon filename.js`
-    b. npm install axios --save    ---------> save will make an entry in package.json
+    b. npm install axios --save    ---------> httpClient package save will make an entry in package.json
     c. npm - react-router-dom      ---------> link and route, parameterized route, route using program
 ### Run `npm install` in the client machine.
 ### Useful plugins in Visual Studio Code - Live Server, Bootstrap 3 snippets

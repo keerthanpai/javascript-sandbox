@@ -7,6 +7,7 @@ import { MyComp } from './mycomp';
 import './index.css';
 import { Login } from './Login';
 import { Home } from './Home';
+import { RestComp } from './rest';
 
 //npm install react-router-dom --save
 function AppRouter(){
@@ -20,6 +21,7 @@ function AppRouter(){
                 <li> <Link to="/topicscomp">Topics</Link> </li>
                 <li> <Link to="/mycomp">My Component</Link> </li>
                 <li> <Link to="/signin">Sign in</Link> </li>
+                <li> <Link to="/rest">Rest</Link> </li>
             </ul>
             <div className="container">
                 <Route path='/' exact component={Home}/>
@@ -27,6 +29,7 @@ function AppRouter(){
                 <Route path='/topicscomp' component={Topics}/>
                 <Route path='/mycomp' component={MyComp}/>
                 <Route path='/signin' component={Login}/>
+                <Route path='/rest' component={RestComp}/>
             </div>
         </div>
     )
