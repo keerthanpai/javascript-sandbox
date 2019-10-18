@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-##Notes to recreate this package
+##Steps taken to recreate this package, outside of what can be tracked in commits
 ### Adding additional dependency for the project. npm -- equivalaent to gradle/maven
     npm init
     a. nodemon package to auto reload nodejs changes.
@@ -21,6 +21,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
         </error-page>
     in the app's web.xml
     Contents in build directory needs to be copied to `apache-tomcat-9.0.1/webapps/sample` then start tomcat
+### npm install -s carbon-components-react carbon-components carbon-icons
+### npm install -s node-sass --dev
+### npm install -s @carbon/grid
 
 
 ## Available Scripts

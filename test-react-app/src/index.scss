@@ -1,0 +1,36 @@
+@import '~carbon-components/scss/globals/scss/styles.scss';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 20p;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+li {
+  display: inline;
+  padding: 10px;
+}
+
+li:hover {
+  background-color: beige;
+}
+
+.container {
+  border: 2px grey solid;
+  width: 600px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.redColor {
+  color: red;
+}
