@@ -1,29 +1,39 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-##Steps taken to recreate this package, outside of what can be tracked in commits
-### Adding additional dependency for the project. npm -- equivalaent to gradle/maven
-    npm init
-    a. nodemon package to auto reload nodejs changes.
-        npm install -g nodemon     ---------> -g : To globally install nodemon
-        `nodemon filename.js`
-    b. npm install axios --save    ---------> httpClient package save will make an entry in package.json
-    c. npm - react-router-dom      ---------> link and route, parameterized route, route using program
-### Run `npm install` in the client machine.
-### Useful plugins in Visual Studio Code - Live Server, Bootstrap 3 snippets
-### Use `create-react-app test-react-app`to create the react app. `npm start` starts the single page application with the root as index.js - <div id='root'>
-### Component -> UI/View - Model (functional compomnents - stateless... class components - stateful)
-###build code to be deployed--- npm run build
-###To deploy within a war on tomcat -- > change web.xml of sample.war
-    Add 
-        <error-page>
-            <error-code>404<error-code>
-            <location>/index.html<location>    
-        </error-page>
-    in the app's web.xml
-    Contents in build directory needs to be copied to `apache-tomcat-9.0.1/webapps/sample` then start tomcat
-### npm install -s carbon-components-react carbon-components carbon-icons
-### npm install -s node-sass --dev
-### npm install -s @carbon/grid
+Used ```create-react-app test-react-app``` to create the react app.
+
+To run this app run in the client machine, run 
+```
+npm install
+```
+followed by 
+```
+npm start
+```
+`npm install` installs all the dependency in package.json required for this app to run in the client machine.
+`npm start` starts the single page application with the root as index.js - `<div id='root'>`
+
+
+## Steps taken to recreate this package, outside of what can be tracked in commits
+
+#### These are the additional dependency added to this project. (npm -- equivalaent to gradle/maven for java, package manager)
+
+1. npm install axios --save    ---------> httpClient package save will make an entry in package.json
+
+2. npm - react-router-dom      ---------> link and route, parameterized route, route using program
+
+#### These dependencies were required for carbon design skins            
+
+1. npm install -s carbon-components-react carbon-components carbon-icons
+
+2. npm install -s node-sass --dev
+
+3. npm install -s @carbon/grid
+
+
+
+
+
 
 
 ## Available Scripts
@@ -92,3 +102,21 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+
+## Tips and tricks
+
+1.  Useful plugins in Visual Studio Code - Live Server, Bootstrap 3 snippets
+
+2. Component -> UI/View - Model (functional compomnents - stateless... class components - stateful)
+
+3. To deploy within a war on tomcat 
+a. Change web.xml of sample.war, add the following to app's web.xml
+```
+<error-page>
+   <error-code>404<error-code>
+   <location>/index.html<location>    
+</error-page>
+```
+b.Contents in build directory needs to be copied to `apache-tomcat-9.0.1/webapps/sample` then start tomcat
