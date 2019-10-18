@@ -37,7 +37,7 @@ function AppRouter(){
 }
 
 ReactDOM.render(
-    <BrowserRouter>
+    <BrowserRouter basename="/sample">
         <AppRouter/>
     </BrowserRouter>
     , document.getElementById('root'));

@@ -12,6 +12,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### Useful plugins in Visual Studio Code - Live Server, Bootstrap 3 snippets
 ### Use `create-react-app test-react-app`to create the react app. `npm start` starts the single page application with the root as index.js - <div id='root'>
 ### Component -> UI/View - Model (functional compomnents - stateless... class components - stateful)
+###build code to be deployed--- npm run build
+###To deploy within a war on tomcat -- > change web.xml of sample.war
+    Add 
+        <error-page>
+            <error-code>404<error-code>
+            <location>/index.html<location>    
+        </error-page>
+    in the app's web.xml
+    Contents in build directory needs to be copied to `apache-tomcat-9.0.1/webapps/sample` then start tomcat
+
 
 ## Available Scripts
 
