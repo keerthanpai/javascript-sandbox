@@ -4,7 +4,7 @@ export class Login extends React.Component{
         constructor(props){
         super(props);
         if(sessionStorage.getItem('login') != null){
-            alert('already logged in.')
+            alert( sessionStorage.getItem('login') + ' is already logged in.')
             this.props.history.push("/");
         }
         this.state = {
