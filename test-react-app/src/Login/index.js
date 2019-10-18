@@ -3,6 +3,10 @@ import React from 'react';
 export class Login extends React.Component{
         constructor(props){
         super(props);
+        if(sessionStorage.getItem('login') != null){
+            alert('already logged in.')
+            this.props.history.push("/");
+        }
         this.state = {
             msg:''
         }
@@ -13,7 +17,9 @@ export class Login extends React.Component{
         let pass = this.refs.passref.value;
 
         if(user === 'john' && pass === '123'){
-            this.props.history.push('/userhome/' + user);      //Redirection
+            sessionStorage.setItem('login', user);
+            this.props.history.push("/");      //Redirection
+            //this.props.history.push('/userhome/' + user);      //Redirection
             //this.setState({msg:'Welcome'});       
         }
         else

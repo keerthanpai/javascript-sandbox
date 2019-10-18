@@ -6,7 +6,6 @@ import { Topics } from './topics/Topics';
 import { MyComp } from './mycomp';
 import './index.css';
 import { Login } from './Login';
-import App from './App';
 import { Home } from './Home';
 
 //npm install react-router-dom --save
@@ -24,14 +23,10 @@ function AppRouter(){
             </ul>
             <div className="container">
                 <Route path='/' exact component={Home}/>
-                <Route path='/userhome/:user' component={Home}/>
                 <Route path='/ibmcomp/:city' component={IBMComp}/>
                 <Route path='/topicscomp' component={Topics}/>
                 <Route path='/mycomp' component={MyComp}/>
                 <Route path='/signin' component={Login}/>
-            </div>
-            <div>
-                <Route path='/' component={App}/>
             </div>
         </div>
     )
