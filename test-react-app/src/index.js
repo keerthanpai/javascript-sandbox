@@ -14,6 +14,7 @@ function AppRouter(){
     return (
         <div>
             <ul>
+                <li className="nav"> <img src="logo152.png" width="100px"/> </li>
                 <li> <Link to="/">Home</Link> </li>
                 <li> <Link to="/ibmcomp/bangalore">IBM BLR</Link> </li>
                 <li> <Link to="/ibmcomp/pune">IBM Pune</Link> </li>

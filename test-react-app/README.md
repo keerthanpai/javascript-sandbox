@@ -1,5 +1,18 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+##Notes to recreate this package
+### Adding additional dependency for the project. npm -- equivalaent to gradle/maven
+    npm init
+    a. nodemon package to auto reload nodejs changes.
+        npm install -g nodemon     ---------> -g : To globally install nodemon
+        `nodemon filename.js`
+    b. npm install axios --save    ---------> save will make an entry in package.json
+    c. npm - react-router-dom      ---------> for routing calls. 
+### Run `npm install` in the client machine.
+### Useful plugins in Visual Studio Code - Live Server, Bootstrap 3 snippets
+### Use `create-react-app test-react-app`to create the react app. `npm start` starts the single page application with the root as index.js - <div id='root'>
+### Component -> UI/View - Model (functional compomnents - stateless... class components - stateful)
+
 ## Available Scripts
 
 In the project directory, you can run:
